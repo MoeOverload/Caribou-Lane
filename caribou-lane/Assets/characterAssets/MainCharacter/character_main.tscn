@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://juau23jdwlih"]
+
+[ext_resource type="Texture2D" uid="uid://d2eo8cqonr85j" path="res://Assets/characterAssets/MainCharacter/idle animation(main)-Sheet.png" id="1_pi677"]
+[ext_resource type="Script" path="res://Assets/characterAssets/MainCharacter/character_body_2d.gd" id="2_lier2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_546gs"]
+radius = 7.0
+height = 28.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tffxv"]
+atlas = ExtResource("1_pi677")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ex6k"]
+atlas = ExtResource("1_pi677")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8slm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tffxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ex6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ex6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ex6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ex6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tffxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tffxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tffxv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="CharacterMain" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+z_index = 1
+motion_mode = 1
+script = ExtResource("2_lier2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_546gs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_q8slm")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.683219
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
