@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0mfx0xhwxrqq"
-path="res://.godot/imported/ground-layers(32x32).png-5863a336d7403a40e322580111349107.ctex"
+uid="uid://xhwiosl4vqfq"
+path="res://.godot/imported/ground-objects(32x32).png-470174c855fd31520a7e9590b476acc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/characterAssets/MainCharacter/ground-layers(32x32).png"
-dest_files=["res://.godot/imported/ground-layers(32x32).png-5863a336d7403a40e322580111349107.ctex"]
+source_file="res://Assets/TileSets/GroundObjects/ground-objects(32x32).png"
+dest_files=["res://.godot/imported/ground-objects(32x32).png-470174c855fd31520a7e9590b476acc5.ctex"]
 
 [params]
 
