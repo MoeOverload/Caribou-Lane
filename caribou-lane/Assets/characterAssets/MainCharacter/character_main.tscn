@@ -1,7 +1,7 @@
 [gd_scene load_steps=30 format=3 uid="uid://juau23jdwlih"]
 
 [ext_resource type="Texture2D" uid="uid://d2eo8cqonr85j" path="res://Assets/characterAssets/MainCharacter/idle animation(main)-Sheet.png" id="1_pi677"]
-[ext_resource type="Script" path="res://Assets/characterAssets/MainCharacter/character_body_2d.gd" id="2_lier2"]
+[ext_resource type="Script" uid="uid://ve1qdejb6q2c" path="res://Assets/characterAssets/MainCharacter/character_body_2d.gd" id="2_lier2"]
 [ext_resource type="Texture2D" uid="uid://cfkux1objddrh" path="res://Assets/characterAssets/MainCharacter/walk down anim-Sheet.png" id="3_cjla1"]
 [ext_resource type="Texture2D" uid="uid://upjar4ebs3yy" path="res://Assets/characterAssets/MainCharacter/walk right anim-Sheet.png" id="3_ir3ik"]
 [ext_resource type="Texture2D" uid="uid://bqoese8nx8c5b" path="res://Assets/characterAssets/MainCharacter/walk left anim-Sheet.png" id="4_26fgc"]
@@ -230,6 +230,6 @@ frame_progress = 0.723796
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 process_callback = 0
 position_smoothing_enabled = true

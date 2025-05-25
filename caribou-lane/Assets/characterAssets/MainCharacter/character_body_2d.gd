@@ -1,9 +1,10 @@
 extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
-@export var move_speed = 50
+@export var move_speed = 60
 
 func get_input():
 	velocity = Vector2.ZERO
+	
 
 	if Input.is_action_pressed("left"):
 		_animated_sprite.play("walk_left")
